@@ -1,5 +1,4 @@
 const discord = require("discord.js");
-const config = require("../config.json");
 const fs = require("fs");
 const guildConfig = require('../guildConfig.json')
 
