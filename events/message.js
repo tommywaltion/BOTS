@@ -1,4 +1,3 @@
-const config = require('../config.json')
 const fs = require("fs")
 const {bot} = require('../main')
 const ytdl = require('ytdl-core')
@@ -18,7 +17,7 @@ bot.on("message", async message =>{
   let prefix = guildConfig[message.guild.id].prefix;
 
   if(!prefix) {
-    guildConfig[message.guild.id].prefix = config.prefix
+    guildConfig[message.guild.id].prefix = process.env.PREFIX
   }
 
   let cmd = msg.slice(prefix.length).split(" ");
