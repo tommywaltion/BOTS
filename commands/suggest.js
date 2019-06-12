@@ -1,9 +1,7 @@
 const discord = require("discord.js");
-const config = require("../config.json");
 
 module.exports.run = async(bot, message, args) => {
 
-      prefix = config.prefix;
 
       let suggestion = args[0];
       let reason = message.content.slice(prefix.length).split(" ").slice(2).join(" ");
@@ -33,8 +31,6 @@ module.exports.run = async(bot, message, args) => {
       .addField("Created time", message.createdAt, true)
       .addField("The suggestion", reason)
       .setColor("#06ff61");
-
-      let suggestionChannel = message.guild.channels.find("name", "suggest-channel");
 
       message.delete().catch(O_o=>{});
       const suggestChannel = message.guild.channels.find("name", "suggest-channel");
