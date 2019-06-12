@@ -37,7 +37,7 @@ bot.on("message", async message =>{
 
   //music section
   const serverQueue = queue.get(message.guild.id);
-  const youtube = new YT(config.google_api)
+  const youtube = new YT(process.env.API_KEY)
 
   if(msg.startsWith(`${prefix}play`)){  
     const urls = message.content.split(" ").slice(1).join(" ");
