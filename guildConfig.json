@@ -1,0 +1,49 @@
+{
+  "458671436127797248": {
+    "prefix": ">",
+    "welcomeChannel": {
+      "type": "text",
+      "deleted": false,
+      "id": "572033832665219074",
+      "name": "umum",
+      "position": 1,
+      "parentID": "572033832665219073",
+      "permissionOverwrites": {},
+      "topic": "",
+      "nsfw": false,
+      "lastMessageID": "579679296533299221",
+      "guild": {
+        "members": {},
+        "channels": {},
+        "roles": {},
+        "presences": {},
+        "deleted": false,
+        "available": true,
+        "id": "572033832665219072",
+        "name": "GemotShadow",
+        "icon": "f70f4404f6d39ee2acf7454c83bc02bf",
+        "splash": null,
+        "region": "singapore",
+        "memberCount": 8,
+        "large": false,
+        "features": [],
+        "applicationID": null,
+        "afkTimeout": 300,
+        "afkChannelID": "572035921478680576",
+        "systemChannelID": "573788092859940875",
+        "verificationLevel": 0,
+        "explicitContentFilter": 0,
+        "mfaLevel": 0,
+        "joinedTimestamp": 1558259714160,
+        "defaultMessageNotifications": "ALL",
+        "ownerID": "538510155080400922",
+        "_rawVoiceStates": {},
+        "emojis": {}
+      },
+      "messages": {},
+      "_typing": {}
+    },
+    "suggestChannel": null,
+    "logChannel": null
+  }
+}
