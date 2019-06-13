@@ -17,7 +17,7 @@ bot.on("message", async message =>{
   let prefix = guildConfig[message.guild.id].prefix;
 
   if(!prefix) {
-    guildConfig[message.guild.id].prefix = process.env.PREFIX
+    guildConfig[message.guild.id].prefix = process.env.PREFIX;
   }
 
   let cmd = msg.slice(prefix.length).split(" ");
