@@ -1,4 +1,4 @@
-const fs = require("fs")
+const config = require('../config.json') 
 const {bot} = require('../main')
 const ytdl = require('ytdl-core')
 const queue = new Map();
@@ -17,7 +17,8 @@ bot.on("message", async message =>{
   let prefix = guildConfig[message.guild.id].prefix;
 
   if(!prefix) {
-    guildConfig[message.guild.id].prefix = process.env.PREFIX;
+    //process.env.PREFIX
+    guildConfig[message.guild.id].prefix =  process.env.PREFIX;
   }
 
   let cmd = msg.slice(prefix.length).split(" ");
@@ -36,7 +37,7 @@ bot.on("message", async message =>{
 
   //music section
   const serverQueue = queue.get(message.guild.id);
-  const youtube = new YT(process.env.API_KEY)
+  const youtube = new YT(process.env.API_KEY) //process.env.API_KEY
 
   if(msg.startsWith(`${prefix}play`)){  
     const urls = message.content.split(" ").slice(1).join(" ");

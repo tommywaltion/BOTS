@@ -14,3 +14,4 @@ module.exports = {
   bot: bot
 };
 bot.login(process.env.BOT_TOKEN);
+//process.env.BOT_TOKEN

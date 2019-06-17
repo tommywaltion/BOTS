@@ -1,8 +1,8 @@
 const {RichEmbed, Attachment} = require('discord.js')
 const GoogleImage = require('image-search-google')
 const {saveGoogle, google_api, NSFW} = require('../config.json')
-const google = new GoogleImage(saveGoogle, process.env.API_KEY);
-const adult = new GoogleImage(NSFW, process.env.API_KEY);
+const google = new GoogleImage(saveGoogle, process.env.API_KEY) //process.env.API_KEY);
+const adult = new GoogleImage(NSFW, process.env.API_KEY) //process.env.API_KEY);
 
 module.exports.run = async(bot, message, args) => {
     try {

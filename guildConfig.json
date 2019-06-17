@@ -45,5 +45,11 @@
     },
     "suggestChannel": null,
     "logChannel": null
+  },
+  "572033832665219072": {
+    "prefix": ".",
+    "welcomeChannel": "573788092859940875",
+    "suggestChannel": "590085636225105927",
+    "logChannel": "572649424715776031"
   }
 }
